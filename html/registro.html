@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/parqueadero.ico" type="image/x-icon">
+</head>
+<body>
+    <h2>Registro de Usuario</h2>
+    <form action="../php/UsuarioDAO.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="cedula">Número de Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required><br>
+
+        <label for="placa_vehiculo">Placa del Vehículo:</label>
+        <input type="text" id="placa_vehiculo" name="placa_vehiculo" required><br>
+
+        <label for="tipo_vehiculo">Tipo de Vehículo:</label>
+        <select id="tipo_vehiculo" name="tipo_vehiculo" required>
+            <option value="Auto">Auto</option>
+            <option value="Moto">Moto</option>
+            <option value="Camion">Camión</option>
+            <option value="Otro">Otro</option>
+        </select><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+
+        <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
